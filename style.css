@@ -40,6 +40,9 @@ a {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
+a:hover {
+  color: gray;
+}
 
 
 .hero {
@@ -76,7 +79,7 @@ a {
   align-content: center;
   padding: 3rem;
 }
-#footnote {
+.footnote {
   position: absolute;
   bottom: 5rem;
 }
