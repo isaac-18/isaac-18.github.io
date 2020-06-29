@@ -1,0 +1,101 @@
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* font-family: "Anonymous Pro", monospace; */
+  font-family: "Special Elite", cursive;
+}
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+a:hover {
+  color: gray;
+}
+
+
+.hero {
+  min-height: 100vh;
+  background: url(/img/paper-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  padding: 2rem;
+}
+
+.hero h5 {
+  padding: 3rem;
+}
+
+.hero ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.hero ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 3rem;
+}
+.footnote {
+  position: absolute;
+  bottom: 5rem;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 935px) {
+  html {
+    font-size: 45%;
+  }
+  .hero ul {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .hero ul li {
+    padding: 2rem;
+  }
+}
